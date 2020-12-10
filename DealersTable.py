@@ -46,20 +46,19 @@ class Dealers_Table:
                 elif RoundOut == str(4):
                     Found = GAME.pop(3)
                     LST.insert(Found)
-                
                 i += 1
 
         
 
 
 Ajani = Player("Ajani", 100, "Ajani's.txt")
-Haley = Player("Haley", 100, "Haley's.txt")
-Rahmir = Player("Rahmir", 100, "Rahmir's.txt")
-Sandman = Player("Sandman", 100, "Sandman's.txt")
+Jim = Player("Jim", 100, "Jim's.txt")
+Bob = Player("Bob", 100, "Bob's.txt")
+Joe = Player("Joe", 100, "Joe's.txt")
 Tam = Dealer("Tam")
 Disney = Deck("Disney", Joker=True)
 Tam.EquipDeck(Disney)
-Classic = Dealers_Table("Classic", Tam, Ajani, Haley, Rahmir, Sandman)
+Classic = Dealers_Table("Classic", Tam, Ajani, Jim, Bob, Joe)
 Classic.RoundOrder()
 
 eval
